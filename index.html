@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- imported links from google fonts for font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Tagesschrift&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- link to the stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- imported icon link -->
+    <script src="https://kit.fontawesome.com/ab2164bc4f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Home section -->
+    <div id="home">
+        <div class="container">
+            <nav>
+                <h1>My <span class="word">Portfolio</span></h1>
+                <ul id="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark icon" onclick="closeTab()"></i>
+                </ul>
+                 <i class="fa-solid fa-bars icon" onclick="openTab()"></i>
+            </nav>
+            <div class="par">
+                <h2>Front-End Developer</h2>
+                <p>I am <span>Khadija Goni</span> 
+                    <br>from Nigeria</p>
+            </div>
+       </div>
+    </div>
+<!-- About me  dispaly section-->
+    <div id="about-me">
+        <div class="container">
+            <div class="row">
+                <div class="aboutme-col-1">
+                    <img src="images/logo.jpg" class="">
+                </div>
+                <div class="aboutme-col-2">
+                    <h2>About Me</h2>
+                    <p>
+                        My background in industrial chemistry has equipped me with strong analytical thinking and meticulous problem-solving skills – valuable assets 
+                        I'm now applying to my passion for web development. Just as chemistry builds functional systems from elements, I'm learning to construct engaging 
+                        digital experiences with code.
+
+                        My focus in web development lies in the front-end, where I'm eager to build user-friendly and visually appealing interfaces.
+                        My scientific eye for detail translates directly to crafting clean, efficient, and well-tested code. The problem-solving honed in the lab fuels 
+                        my ability to debug and create dynamic web applications.
+
+                       This portfolio showcases my growing skills in HTML, CSS, and JavaScript, 
+                       as I learn to translate ideas into interactive realities. I'm excited to leverage my unique scientific 
+                       perspective to create innovative and user-centric web solutions.
+                    </p>
+                    <div class="tab-tab">
+                        <p class="tab-names active-tabs" onclick = "displayInfo('skills')">Skills</p>
+                        <p class="tab-names" onclick="displayInfo('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-contents" id="skills">
+                        <ul>
+                            <li> <span>Web Design</span>
+                                <br>Designing intuitive and effective web solutions centered around the user.
+                            </li>
+                            <li> <span>Web Development</span>
+                                <br>Building responsive and functional websites using the latest technologies.
+                                <br>API Integration:
+                                <br>RESTful APIs: Understanding how to fetch and send data to backend services.
+                                <br>Fetch API/Axios: JavaScript libraries for making HTTP requests.
+                                <br>HTML5: The latest standard for structuring web content.
+                                <br>CSS3: For styling and layout, including modern features like animations and flexbox/grid.
+                                <br>JavaScript (ES6+): The core language for interactivity.
+                            </li>
+                            <li> <span>React.js</span>
+                                <br>A JavaScript library for building user interfaces.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li> <span>2020</span>
+                                <br>Secondary School Certificate
+                            </li>
+                            <li> <span>2025</span>
+                                <br>
+                                Currently in University Level 3
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Projects  display section-->
+<div class="project" id="project">
+    <div class="container">
+        <h2>My work</h2>
+        <div class="work">
+            <div class="my-work-1">
+                <img src="images/weather.jpg"alt="weather">
+                <div class="my-work-n">
+                    <h3>Weather App</h3>
+                    <p>This is a weather application that uses API integration to get the weather of all city's from all around
+                    the world in real time click on the icon below to try.
+                </p>
+                <a href="https://waeth.netlify.app"><i class="fa-solid fa-link icon"></i></a>
+                </div>
+            </div>
+            <div class="my-work-1">
+                    <img src="images/story.jpg" alt="template">
+                 <div class="my-work-n">
+                        <h3>AI Story Generator</h3>
+                        <p>
+                        This is a story application that allows you to create your own story and share it with the world.
+                        click on the icon below to try.
+                    </p>
+                    <a href="https://sage-quokka-c373ea.netlify.app/"><i class="fa-solid fa-link icon"></i></a>
+                </div>
+            </div>
+            <div class="my-work-1">
+                    <img src="images/story.jpg" alt="template">
+                 <div class="my-work-n">
+                        <h3>AI Story Generator</h3>
+                        <p>
+                        This is a story application that allows you to create your own story and share it with the world.
+                        click on the icon below to try.
+                    </p>
+                    <a href="https://sage-quokka-c373ea.netlify.app/"><i class="fa-solid fa-link icon"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- contact me section  -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                 <h2>Contact Me</h2>
+                 <p>If you have any questions or would like to get in touch, feel free to reach out!</p> 
+                 <p>khadijaismail696@gmail.com</p> 
+                <div class="social-icons">
+                    <a href="https://github.com/Deeja-ish"><i class="fa-brands fa-github"></i></a>
+                    <a href="www.linkedin.com/in/khadija-ismail-211223293"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/dee.ja_khady/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="" class="document download" download>Download CV</a>
+            </div>
+            <div class="contact-right">
+            <form action="" method="">
+                <input type="text" name="name" placeholder="Your Name" required class="name">
+                <input type="email" name="email" placeholder="Your Email" required class="email">
+                <textarea name="message" rows="5" placeholder="Your Message" class="message"></textarea>
+                <button type="submit" class="document">Send Message</button>
+            </form>
+            </div>
+        </div>
+    </div>
+    <!-- copyright section -->
+    <div class="copyright">
+        <p>&copy;  Khadija Goni 2025<i class="fa-solid fa-heart"></i> </p>
+    </div>
+</div>
+   <!-- javascript -->
+<script>
+// Javascript code for the skills and education section
+const tabNames = document.getElementsByClassName("tab-names");
+const tabContents = document.getElementsByClassName("tab-contents");
+// function to display the clicked tab content and hide others for the skills and education section
+function displayInfo(tabId) {
+    // Remove active class from all tab contents
+    for (let tabContent of tabContents) {
+        tabContent.classList.remove("active-contents");
+    }
+
+    // Remove active class from all tab names
+    for (let tabName of tabNames) {
+        tabName.classList.remove("active-tabs");
+    }
+
+    // Add active class to the clicked tab name (matching text content)
+    for (let tabName of tabNames) {
+        if (tabName.textContent.toLowerCase() === tabId.toLowerCase()) { // Case-insensitive comparison
+            tabName.classList.add("active-tabs");
+            break; // Stop once found
+        }
+    }
+
+    // Add active class to the corresponding tab content
+    const targetTabContent = document.getElementById(tabId);
+    if (targetTabContent) {
+        targetTabContent.classList.add("active-contents");
+    }
+}
+// Javascript code for the menu bar in screen less than 700px
+var menu = document.getElementById("menu");
+function openTab(){
+    menu.style.right = "0"
+}
+
+function closeTab(){
+    menu.style.right = "-200px"
+}
+    </script>
+</body>
+</html>
+
