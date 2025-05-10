@@ -372,20 +372,20 @@ nav .icon{
         font-size: 15px;
     }
     .my-work-n p {
-    font-size: 10px;
-    line-height: 0.6;
+    font-size: 15px;
+    line-height: 1.6;
     margin-bottom: 5px;
     }
 
-  .my-work-n a .icon{
-  color:#f5b553;
-  font-size: 10px;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 50%;
-  background-color: white;
-  margin: 10px;
-  padding: 20px;
-  }
+    .my-work-n a .icon{
+    color:#f5b553;
+    font-size: 10px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50%;
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    }
 
 }
