@@ -18,7 +18,7 @@
     <div id="home">
         <div class="container">
             <nav>
-                <h1>My <span class="word">Portfolio</span></h1>
+                <h1>K<span class="word">GONI.</span></h1>
                 <ul id="menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about-me">About</a></li>
@@ -123,14 +123,14 @@
                 </div>
             </div>
             <div class="my-work-1">
-                    <img src="images/story.jpg" alt="template">
+                    <img src="images/clock.webp" alt="template">
                  <div class="my-work-n">
-                        <h3>AI Story Generator</h3>
+                        <h3>Clock Project</h3>
                         <p>
-                        This is a story application that allows you to create your own story and share it with the world.
-                        click on the icon below to try.
-                    </p>
-                    <a href="https://sage-quokka-c373ea.netlify.app/"><i class="fa-solid fa-link icon"></i></a>
+                        This project involved the development of a real-time World Clock web application using fundamental web technologies:
+                         HTML, CSS, and JavaScript.
+                        </p>
+                    <a href="https://app.netlify.com/projects/world-clock-project-js-new/"><i class="fa-solid fa-link icon"></i></a>
                 </div>
             </div>
         </div>
@@ -147,16 +147,16 @@
                  <p>khadijaismail696@gmail.com</p> 
                 <div class="social-icons">
                     <a href="https://github.com/Deeja-ish"><i class="fa-brands fa-github"></i></a>
-                    <a href="www.linkedin.com/in/khadija-ismail-211223293"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://linkedin.com/in/khadija-ismail-211223293"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://www.instagram.com/dee.ja_khady/"><i class="fa-brands fa-instagram"></i></a>
                 </div>
-                <a href="" class="document download" download>Download CV</a>
+                <a href="file/CV.docx" class="document download" download>Download CV</a>
             </div>
             <div class="contact-right">
-            <form action="" method="">
-                <input type="text" name="name" placeholder="Your Name" required class="name">
-                <input type="email" name="email" placeholder="Your Email" required class="email">
-                <textarea name="message" rows="5" placeholder="Your Message" class="message"></textarea>
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required class="name">
+                <input type="email" name="Email" placeholder="Your Email" required class="email">
+                <textarea name="Message" rows="5" placeholder="Your Message" class="message"></textarea>
                 <button type="submit" class="document">Send Message</button>
             </form>
             </div>
@@ -207,6 +207,21 @@ function openTab(){
 function closeTab(){
     menu.style.right = "-200px"
 }
+</script>
+<script>
+// Javascript code for the form
+  const scriptURL = "https://script.google.com/macros/s/AKfycbwP7QH0xYv_IlY0OdqoUSl77oSKugOl8ujfsieO_j-8uyeru76-Pl8RgeFXQybMDD7y/exec"
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        alert("Message sent successfully!");
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
     </script>
 </body>
 </html>
