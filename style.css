@@ -390,6 +390,22 @@ nav .icon{
 
     .aboutme-col-2  p{
     font-size:15px;
+    }
 
+    .copyright{
+    font-size: 20px;
+    padding: 20px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    .aboutme-col-2 h2{
+    font-size: 30px;
+   }
+
+   .tab-contents{
+    font-size: 20px;
 }
 };
