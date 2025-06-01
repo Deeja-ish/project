@@ -397,15 +397,36 @@ nav .icon{
     padding: 20px;
     }
 
-    h2{
-        font-size: 20px;
-    }
-
     .aboutme-col-2 h2{
     font-size: 30px;
    }
 
-   .tab-contents{
+    .aboutme-col-2{
+        font-size: 20px
+    }
+
+    .contact-left p{
+    margin-top: 20px;
+    font-size: 15px;
+    }
+
+    .my-work-n h3 {
     font-size: 20px;
-}
+    }
+
+     .tab-contents ul li{
+        font-size: 15px
+    }
+    .container h2{
+        font-size: 25px
+    }
+    .document{
+        font-size: 20px;
+        padding: 5px 10px;
+        border-radius: 5px
+    }
+
+    .contact-right{
+        font-size: 15px
+    }
 };
