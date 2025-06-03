@@ -97,12 +97,6 @@ nav ul li a:hover::after {
 /* About Me Section */
 .par {
     margin-top: 150px; /* Keep for desktop */
-    text-align: center; /* Center align home section text */
-    flex-grow: 1; /* Allow content to grow and push copyright to bottom */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .par h2 {
